@@ -5,7 +5,7 @@ const apiServer = express();
 const port = process.env.PORT || 3000;
 
 apiServer.get('/', (req, res) => {
-  res.send(`API is up & running at port ${port}`);
+  res.send(`Express API is up & running at port ${port}`);
 });
 
 apiServer.use('/api', apiRouter);
