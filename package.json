@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "serve": "node ./src/index.mjs",
+    "start": "node ./src/index.mjs",
     "test": "npm run start",
     "dev": "npm-run-all serve",
     "api": "nodemon"
