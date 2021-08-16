@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node ./src/index.mjs",
     "test": "npm run start",
-    "dev": "npm-run-all serve",
-    "api": "nodemon"
+    "dev": "npm-run-all serve"
   },
   "author": "RaichuAK",
   "license": "ISC",
