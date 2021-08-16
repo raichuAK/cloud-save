@@ -34,7 +34,7 @@ class APIservice {
       }
       return resultSet.rows;
     } catch (error) {
-      throw new Error(error); // TODO make this custom application error object
+      console.error('Error while getPages '+pageName+' for '+error); // TODO make this custom application error object
     } finally {
       if (statement) {
         await statement.close();
@@ -61,7 +61,7 @@ class APIservice {
       );
       return resp;
     } catch (error) {
-      throw new Error(error); // TODO make this custom application error object
+      console.error('Error while saving page '+error); // TODO make this custom application error object
     } finally {
     }
   } 
