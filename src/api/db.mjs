@@ -55,7 +55,7 @@ class APIservice {
       } else {
         page.count = 1;
       }
-      let sql = `insert into Page(pageName, count) values ( '${page.pageName}', ${page.count}  ) ON CONFLICT ON CONSTRAINT page_pk DO UPDATE SET count = ${page.count}`;
+      let sql = `insert into public.Page(pageName, count) values ( '${page.pageName}', ${page.count}  ) ON CONFLICT ON CONSTRAINT page_pk DO UPDATE SET count = ${page.count}`;
       const resp = await dbConn.query(
         sql
       );
